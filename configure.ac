@@ -5,7 +5,10 @@ AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([Makefile])
 dnl Check for SDL
 SDL_VERSION=2.0.8
-AM_PATH_SDL2($SDL_VERSION,:,AC_MSG_ERROR([*** SDL version $SDL_VERSION not found]))
+AM_PATH_SDL2($SDL_VERSION,
+:,
+AC_MSG_ERROR([*** SDL version $SDL_VERSION not found])
+)
 
 PKG_CHECK_MODULES([GL],[gl])
 PKG_CHECK_MODULES([GLU], [glu])
