@@ -1,7 +1,7 @@
 /*
  * MyWindow.cc
  *
- *  Created on: 7 íîÿá. 2019 ã.
+ *  Created on: 7 Ã­Ã®Ã¿Ã¡. 2019 Ã£.
  *      Author: nito
  */
 #include "MyWindow.h"
@@ -11,7 +11,7 @@
 #include <algorithm>
 #include <vector>
 
-static constexpr double Pi = acos(-1);
+static const double Pi = acos(-1);
 
 using VertexVector = std::vector<std::vector<GLdouble>>;
 using NormalVector = std::vector<std::vector<GLdouble>>;
